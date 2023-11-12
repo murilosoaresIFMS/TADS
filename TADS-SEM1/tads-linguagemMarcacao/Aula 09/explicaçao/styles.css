@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 18px;
+}
+
+.Container {
+    border: 1.5px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    height: 500px;
+}
+
+.red , .blue {
+    color: white;
+    width: 200px;
+    height: 200px;
+}
+
+.red {
+    background: tomato;
+}
+
+.blue {
+    background: blue;
+}

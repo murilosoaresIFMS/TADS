@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.Main.Container {
+    height: 100vh;
+    font-family: Arial;
+    display: flex;
+}
+
+.Left.Side {
+    width: 400px;
+    flex: 1;
+    display: flex;
+}
+
+.Panel1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    height: 100vh;
+    background-color: #f0f3f2
+}
+
+#Menu-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50px;
+    margin-top: 40px;
+}
+
+#Center-symbol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: grey; 
+    font-size:  25px;
+    width: 50%;
+    height: 150px;
+}
+
+#Bottom-symbol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    color: grey;
+    width: 50%;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+#user-icon {
+    border: 2px solid black;
+    max-width: 45px;
+    max-height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#user-icon, img {
+    object-fit: cover;
+}
+
+.Panel2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    background: #f0f3f2;
+    list-style-type: none;
+    border-left: 1px solid black;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: bolder;
+    gap: 25px;
+}
+
+ul:hover {
+    color: #ef00ff;
+}
+
+
+.Right.Side {
+    display: flex;
+    flex-direction: column;
+    flex: 2.9;
+    height: 100vh;
+    background-color: white;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0.;
+}
+
+h2 {
+    margin-left: 20px;
+    margin-top: 80px;
+    font-size: 40px;
+    color: #9ca3a7;
+}
+
+.Submits {
+    display: flex;
+    gap: 40px;
+    margin-right: 20px;
+}
+
+button:hover {
+    color: #ef00ff;
+}
+
+.Input {
+    background: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.Input , button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-size: 25px;
+    color: grey;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #e9e9ee;
+    border: none;
+}
+
+.Center {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    flex: 1.1;
+}
+
+h1 {
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.Squares {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+    margin-top: 60px;
+    margin-left: 20px;
+
+}
+
+#Square {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    border: 1px solid #9e9eb5;
+    background: #e9e9ee;
+    width: 450px;
+    height: 180px;
+}
+
+#Square-Right {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    font-family: Arial;
+    margin-left: 40px;
+}
+
+#Icons {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#user-icon-square {
+    border: 2px solid black;
+    background: grey;
+    border-radius: 25px;
+    width: 45px;
+    height: 45px;
+}
+
+#Square-Left {
+    width: 150px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#Circle {
+    background: #f717bf;
+    position: relative;
+    bottom: 65px;
+    box-shadow: 3px 25px 80px #f717bf;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+#dots {
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+span {
+    font-weight: bolder;
+    color: grey;
+}
+
+#Last-Square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #9e9eb5;
+    border-radius: 55px;
+    height: 180px;
+    width: 150px;
+}
+
+.Bottom {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex: 1;
+}
+
+.Table {
+    display: flex;
+    width: 1000px;
+}
+
+.Row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    font-weight: bolder;
+    color: grey;
+    height: 100%;
+    padding: 15px;
+
+}
+ 
+.Row-2 {
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   gap: 2px;
+}
+
+#grey-row {
+    background-color: #e9e9ee;
+}
+
+#table-button {
+    background: none;
+}

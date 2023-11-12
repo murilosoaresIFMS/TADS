@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.Container .Menu-lateral {
+    height: 100%;
+    width: 110px;
+    background: #f4f6fd;
+    border-right: 2px solid rgb(230, 230, 230);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Box-Top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 50px;
+}
+
+.Container .Menu-lateral .Box-Top i {
+    font-size: 30px;
+}
+
+.Container .Menu-lateral .Box-Top .bxl-upwork {
+    color: tomato;
+    font-size: 30px;
+}
+
+.Box-Middle {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Container .Menu-lateral .Box-Middle i {
+    font-size: 30px;
+    color: #6b6464
+}
+
+.Box-Bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.Container .Menu-lateral .Box-Bottom i {
+    font-size: 22px;
+    color: rgb(31, 29, 29);
+}
+
+.Container .Menu-lateral .Box-Bottom img {
+    width: 50px;
+    height: 50px;
+}
+
+.Container .Menu {
+    height: 100%;
+    width: 280px;
+    background: #f4f6fd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Container .Menu  ul li {
+    margin: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    list-style: none;
+}
+
+.Container .Main {
+    height: 100%;
+    width: 100%;
+    background: rgb(253, 253, 253)
+}
+
+.Container .Main .Top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.Container .Main .Top .Box-Left {
+    display: flex;
+    align-items: end;
+}
+
+.Container .Main .Top .Box-Right {
+    display: flex;
+}
+
+.Container .Main .Icons {
+    display: flex;
+    font-size: 15px;
+    gap: 40px;
+    padding-right: 30px;
+}
+
+.Container .Main .Icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.Container .Main .Top .Box-Right .Search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 200px;
+    margin-right: 30px;
+    border-radius: 30px;
+    background: rgb(233, 230, 230);
+}
+
+.Container .Main .Top .Box-Right .Search input {
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 10px;
+    font-weight: 400;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.Container .Main .Cards {
+    width: 350px;
+    height: 180px;
+    margin-left: 30px;
+    background-color: #f4f6fd;
+    border-radius: 35px;
+}
+
+.Container .Main .Cards .Card {
+    width: 350px;
+    height: 180px;
+    background-color: #f4f6fd;
+    border-radius: 45px;
+    padding: 20px;
+}
+
+.Container .Main .Cards .Box {
+   display: flex;
+   justify-content: space-between;
+}
