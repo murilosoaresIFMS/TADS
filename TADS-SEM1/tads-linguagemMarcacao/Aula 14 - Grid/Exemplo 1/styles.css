@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background: rgb(209, 102, 102);
+}
+
+aside {
+    background: rgb(51, 238, 98);
+}
+
+main {
+    background: rgb(34, 34, 102);
+}
+
+footer {
+    background: yellow;
+}
