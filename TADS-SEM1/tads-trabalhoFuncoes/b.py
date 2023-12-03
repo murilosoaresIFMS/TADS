@@ -1,27 +1,18 @@
-print('\t\tCalcular juro composto\n')
+import numpy as np
+import matplotlib.pyplot as plt
+from math import floor 
 
-Capital = input('Insira o valor do capital inicial:  ')
-Taxa = input('Insira o valor da taxa em %:  ')
-Tempo = input('Insira o valor do Tempo:  ')
+def jurosCompostos(capital, taxa, tempo):
+    tempo *= 12
+    taxa = (taxa / 12) / 100
+    return floor(capital * ((1 + taxa) ** tempo))
 
-Capital = float(Capital)
+def jurosCompostos_Aporte(capital, taxa, tempo, aporte):
+    tempo *= 12
+    taxa = (taxa / 12) / 100
+    return floor((capital * ((1 + taxa) ** 1)) + (aporte * ((((1 + taxa) ** tempo) - 1) / taxa)))
 
-for i in range(0, len(Taxa)):
-    if Taxa[i] == "%":
-        Taxa = Taxa.replace(Taxa[i], "")
-
-Taxa = float(Taxa)
-Taxa = Taxa/100
-Tempo = float(Tempo)
-
-print('\nUsando uma fórmula onde C = Capital, i = taxa, t = tempo e M = Montante')
-print('M = C*(1+i)^t')
-
-Montante = (Capital*(1-Taxa)**Tempo)
-
-print(f'\nM = {Capital}*(1 + {Taxa})^{Tempo}')
-print(f'M = {Capital}*({1+Taxa})^{Tempo}')
-print(f'M = {Capital}*{(1+Taxa)**Tempo}')
-print(f'\nMontante = {Capital*(1+Taxa)**Tempo}')
-
-_ = input("Pressione 'Enter' para encerrar o programa...")
+tempo = np.arange(1, 13)
+montante = [jurosCompostos_Aporte(1000, 8.24, t, 0) for t in tempo]
+print(jurosCompostos(1000, 8.24, 1))
+print(montante)
