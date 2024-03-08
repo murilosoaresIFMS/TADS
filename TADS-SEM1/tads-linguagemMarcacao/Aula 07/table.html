@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Exercício 1</title>   
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,100&display=swap');
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                display: grid;
+                place-items: center;
+            }
+
+            table {
+                width: 700px;
+                border: 1px solid #eee;
+                border-collapse: collapse;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            th {
+                background-color: white;
+                padding: 7px;
+                text-align: start;
+            }
+
+            tr {
+                background-color: rgb(231, 231, 231);
+            }
+
+            tbody td {
+                padding: 10px;
+            }
+
+            .bg-branco {
+                background-color: white;
+            }
+
+            .button {
+                background-color: #3a20b9;
+                border-radius: 50px;
+                width: 100px;
+                height: 30px; 
+                border: none;
+                font-weight: bolder;
+                box-shadow: 1px 3px 1px 1px #000000
+            }
+         
+        </style>
+    </head>
+    <body>
+        <div class = "container"> 
+            <table>
+                <thead>
+                    <tr> 
+                        <th> Matéria </th>
+                        <th> Curso </th>
+                        <th> Duração </th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td> Estrutura de Dados </td>
+                        <td> Ciência de Computação </td>
+                        <td> 40h</td>
+                        <td><input type = "button" value = "Matricule-se" class = "button"></td>
+                    </tr>
+                    <tr>
+                        <td  class = 'bg-branco'> Arquitetura de Informação </td>
+                        <td  class = 'bg-branco'> Sistemas de Informação </td>
+                        <td  class = 'bg-branco'> 40h</td>
+                        <td  class = 'bg-branco'><input type = "button" value = "Matricule-se" class = "button"></td>
+                    </tr>
+                    <tr>
+                        <td> Introdução a HTML e CSS </td>
+                        <td> Sistemas para Internet </td>
+                        <td> 40h</td>
+                        <td><input type = "button" value = "Matricule-se" class = "button"></td>
+                    </tr>
+                    <tr>
+                        <td  class = 'bg-branco'> Teoria das Categorias </td>
+                        <td  class = 'bg-branco'> Matemática </td>
+                        <td  class = 'bg-branco'> 80h </td>
+                        <td  class = 'bg-branco'><input type = "button" value = "Matricule-se" class = "button"></td>
+                    </tr>
+                    <tr>
+                        <td> Percepção Visual </td>
+                        <td> Design Gráfico </td>
+                        <td> 20h </td>
+                        <td><input type = "button" value = "Matricule-se" class = "button"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

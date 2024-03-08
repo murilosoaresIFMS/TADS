@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03 - DOM</title>
+</head>
+<body>
+    <!-- <h2>Manipulação da DOM</h2>
+    <a id = 'ref1' href = "https://www.w3.org/DOM">DOM</a> -->
+
+    <p> Lista não ordenada</p>
+    <ul>
+        <li>Primeiro</li>
+        <li>Segundo</li>
+        <li>Terceiro</li>
+    </ul>
+
+    <p class="Paragraph">Texto 1</p>
+    <p class="Paragraph">Texto 1</p>
+    <p class="Paragraph">Texto 1</p>
+    <p class="Paragraph">Texto 1</p>
+</body>
+
+<script>
+        /*
+        LOCALIZAR OBJETO HTML POR ID
+        let resp = document.getElementById('ref1')
+        console.log(resp)
+        console.log(resp.nodeName)
+        resp.innerHTML = 'Novo texto' // Altera conteúdo interno
+        console.log(resp.id)
+        */
+
+        /*
+        LOCALIZAR OBJETOS PRESENTES NO BODY
+        let d = document.body.children 
+        console.log(d)
+        */
+
+
+        /*
+        let listItems = document.getElementsByTagName("li")
+        document.write("<span>Texto dentro dos elementos li</span>")
+        document.write("<p>Há " + listItems.length + " elementos</p>")
+        console.log(listItems)
+
+        listItems[0].innerHTML = "Outro Texto"
+        */
+
+        let text = document.getElementsByClassName('Paragraph')
+
+        for (i=0; i < text.length; i++) {
+            text[i].innerHTML = 'a'
+        }
+
+       
+</script>
+</html>

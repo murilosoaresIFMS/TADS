@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins;
+}
+
+.Main.Container {
+    border: 2px solid black;
+    height: 100vh;
+
+    display: flex;
+}
+
+.Main.Container .Left.Menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex: 0.35;
+    background: grey;
+}
+
+.Main.Container .Left.Menu .Main.Menu {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(4, 150px);
+    background: lightblue;
+    width: 300px;
+    height: 460px;
+    border: 5px solid white;
+}
+
+.Main.Container .Left.Menu .Main.Menu .Box-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: lightblue;
+}
+
+.Main.Container .Left.Menu .Main.Menu .Box-1 .Box-Icon {
+    max-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: white;
+}
+
+.Main.Container .Left.Menu .Main.Menu .Box-1 .Box-Icon  img{
+    max-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: white;
+}
+
+.Main.Container .Left.Menu .Main.Menu .Box-2 {
+    background: blue;
+    margin: 5%;
+    grid-column-start: 1;
+    background: white;
+    border: dotted 2px black;
+}
+
+.Main.Container .Left.Menu .Main.Menu .Box-3 {
+    background: yellow;
+    margin: 7%;
+    background: white;
+    border: dotted 2px black;
+}
+
+.Main.Container .Left.Menu .Main.Menu .Box-4 {
+    background: orange;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 4%;
+    background: white;
+    border: dotted 2px black;
+}
+
+.Main.Container .Left.Menu .Button.Menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 20px;
+    background: #EDEDED;
+    border: 5px solid white;
+    border-radius: 25px;
+    width: 250px;
+    height: 150px;
+}
+
+.Main.Container .Left.Menu .Button.Menu .Buttons {
+    background: white;
+    height: 100px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.Main.Container .Left.Menu .Button.Menu .Buttons input {
+    background: #D5F4FA;
+    border-radius: 25px;
+    border: 1px dotted black;
+    height: 100%;
+    padding: 5px;
+    width: 100%;
+    outline: none;
+}
+
+.Main.Container .Right.Content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: egg;
+}
+
+.Main.Container .Right.Content h1{
+   margin-left: 100px;
+   margin-top: 20px;
+   font-size: 20px;
+}
+
+.Main.Container .Right.Content .Grid.Container {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(1, 350px);
+    padding: 50px;
+    gap: 35px;
+    justify-content: center;
+    width: 1000px;
+    height: 650px;
+}
+
+.Main.Container .Right.Content .Grid.Container .Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: lightblue;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.Main.Container .Right.Content .Grid.Container .Card.Five {
+    background: white;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background: lightblue;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+
+

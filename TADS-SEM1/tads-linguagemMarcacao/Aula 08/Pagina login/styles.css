@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+ }
+
+ h2 {
+    font-size: 40px;
+    font-weight: 1200;
+    color: #fff;
+ }
+
+ h4, a {
+    color: #595b60;
+    font-weight: 400;
+}
+
+.Container {
+    background: linear-gradient(75DEG, #af2e20, #2d62b7);
+    width: 100vw;
+    height: 100vh;
+    display: grid; 
+    place-items: center;
+}
+
+.Login-content {
+    background-color: #181818;
+    width: 600px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Input {
+    border: 1px solid #3a78a2;
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 15px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.Input-text {
+    background: transparent;
+    text-align: center;
+    width: 250px; 
+    height: 35px;
+    border: none;
+    color: #595b60;
+    outline: none;
+}
+
+.btn {
+    border: 1px solid #539f6f;
+    width: 150px;
+    height: 60px;
+    padding: 10px;
+    background: transparent;
+    color: #fff;
+    border-radius: 20px;
+ }
+
+ i {
+    color: #fff;
+    font-size: 36px;
+ }
+
+ .icons {
+    margin: 30px;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+ }
+
