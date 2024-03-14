@@ -9,8 +9,7 @@ class Student:
 
     @age.setter # Alterar atributo privado como se fosse público
     def age(self, age):
-        if age > 0:
-            self.__age = age
+        self.__age = age
 
 stud = Student('Vanessa', 19)
 print('Name:', stud.name, stud.age) # obtém idade usando getter
