@@ -1,1 +1,103 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 </title>
+    <style>
 
+        .Container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        .Header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: lightblue;
+            height: 10%;
+        }
+
+        .Header > div {
+            display: flex;
+            align-items: center;
+            gap: 15%;
+            width: 100px;
+        }
+
+        #h2 {
+           padding: 5%;
+           font-weight: bolder;
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
+
+        ul {
+            display: none;
+            list-style-type: none;
+        }
+
+        ul > * {
+            opacity: 0;
+        }
+        
+        article {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            border: 1px solid black;
+            right: 0px;
+            height: 0px;
+            width: 15%;
+        }
+        
+        .open {
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            transition: height 1s;
+            overflow: hidden;
+        }
+        
+        .open ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .open ul > * {
+            opacity: 1;
+            transition: opacity 2s
+        }
+        /*
+        */
+        
+
+    </style>
+</head>
+<body>
+    <div class = 'Container'>
+        <div class = 'Header'>
+            <h1> Logo </h1>
+            <div>
+                <img src = "icon.jpg">
+                <div id = 'h2'> User </div>
+            </div>
+        </div>
+        <article>
+            <ul>
+                <li>Settings</li>
+                <li id = 'profile'>Profile</li>
+                <li>Logoff</li>
+            </ul>
+        </article>
+    </div>
+    <script src = "script.js"></script>
+</body>
