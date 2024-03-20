@@ -25,16 +25,16 @@ class Cadastro:
         if len(valor) >= 5 and len(valor) <= 15:
             self.__login = valor
         else:
-            print('Valor inválido ')
+            print('Login deve ter entre 5 e 15 caracteres')
 
     @senha.setter
     def senha(self, valor):
         if len(valor) >= 8:
             self.__senha = valor 
         else:
-            print('Valor inválido ')
+            print('Senha deve ter pelo menos 8 caracteres')
 
-c1 = Cadastro('Murilo', '123')
+c1 = Cadastro('Murilo', '123456789')
 
 print(c1.login, c1.senha)
 c1.login = 'a' # Executa o setter
