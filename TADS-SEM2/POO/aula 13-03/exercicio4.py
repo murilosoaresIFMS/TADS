@@ -23,11 +23,13 @@ class BombaCombustivel:
         self.__valorLitro = valorLitro
         self.__quantidadeCombustivel = quantidadeCombustivel
 
-    def abastecerPorValor(self):
-        pass 
+    def abastecerPorValor(self, valor):
+        abastecimento = valor / self.__valorLitro
+        return f'Abastecimento: {abastecimento:.2f} L'
 
-    def abastecerPorLitro(self):
-        pass 
+    def abastecerPorLitro(self, valor):
+        abastecimento = self.__valorLitro * valor 
+        return f'Abastecimento: R$ {abastecimento:.2f}' 
 
     def alterarValor(self): # setter
         pass 
@@ -35,4 +37,7 @@ class BombaCombustivel:
     def alterarQuantidadeCombustivel(self): # setter
         pass
 
-b1 = BombaCombustivel(valorLitro = 5.48, quantidadeCombustivel = 121.9)
+b1 = BombaCombustivel(valorLitro = 5, quantidadeCombustivel = 121.9)
+
+print(b1.abastecerPorValor(50))
+print(b1.abastecerPorLitro(10))
