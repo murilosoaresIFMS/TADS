@@ -30,9 +30,6 @@ class BombaCombustivel:
         if novo_valor > 0:
             self.__valorLitro = novo_valor
     
-
-
-
 b1 = BombaCombustivel(valorLitro = 5.48, quantidadeCombustivel = 121.9)
 
 print(b1)
