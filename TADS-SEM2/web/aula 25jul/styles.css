@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #969696;
+}
+
+.Error {
+    font-size: 0.95rem;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    color: red;
+    background: rgb(206, 147, 147);
+}
