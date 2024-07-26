@@ -63,9 +63,9 @@ let pessoa = {
 function dizerOi() {
     let nome = document.getElementById("nome").value;
     let error = document.getElementById('Error');
-    console.log(error)
     if (nome.length != 0) {
-        console.log(`Oi ${nome}`)
+        error.innerHTML = `Oi, ${nome}`
+        error.classList.add('Sucess')
     }
     else {
         error.innerHTML = 'Insira um valor válido'
